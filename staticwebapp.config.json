@@ -107,6 +107,26 @@
       "allowedRoles": ["authenticated"]
     },
     {
+      "route": "/projects/complianceai/app",
+      "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/",
+      "statusCode": 302
+    },
+    {
+      "route": "/projects/complianceai/app/dashboard",
+      "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/dashboard.html",
+      "statusCode": 302
+    },
+    {
+      "route": "/projects/complianceai/app/models",
+      "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/models.html",
+      "statusCode": 302
+    },
+    {
+      "route": "/projects/complianceai/app/about",
+      "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/about.html",
+      "statusCode": 302
+    },
+    {
       "route": "/projects/*",
       "allowedRoles": ["anonymous"]
     }
