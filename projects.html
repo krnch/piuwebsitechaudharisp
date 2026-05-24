@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Priyanka Chaudhari</title>
+    <meta name="description" content="Live projects built by Priyanka Chaudhari — AI tools, data applications, and more.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .projects-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a3a5c 100%);
+            color: white;
+            padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+            text-align: center;
+        }
+        .projects-header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+        }
+        .projects-header p {
+            font-size: var(--font-size-lg);
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Priyanka Chaudhari</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="case-studies.html" class="nav-link">Case Studies</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="projects-header">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>Live applications and tools I've built — from AI assistants to data dashboards.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" style="background-color: var(--background-alt);">
+        <div class="container">
+            <div class="projects-grid">
+
+                <!-- Project: Compliance & Regulatory Policy Assistant -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-title-group">
+                            <h3 class="project-title">Compliance &amp; Regulatory Policy Assistant</h3>
+                            <div class="project-actions">
+                                <a href="https://zealous-cliff-01e651f0f.7.azurestaticapps.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> Live App
+                                </a>
+                                <a href="https://github.com/chaudharisp/Compliance-AI" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="project-description">
+                        A RAG-powered AI assistant that answers HIPAA and GDPR compliance questions using official regulatory documents &mdash; with cited, accurate responses.
+                    </p>
+
+                    <div class="project-subpages">
+                        <h4 class="subpages-label">App Pages</h4>
+                        <div class="subpages-grid">
+                            <a href="https://zealous-cliff-01e651f0f.7.azurestaticapps.net/" target="_blank" rel="noopener noreferrer" class="subpage-link">
+                                <i class="fas fa-comments"></i>
+                                <span class="subpage-name">Chat</span>
+                                <span class="subpage-desc">Ask compliance questions and get AI-generated answers with source citations</span>
+                            </a>
+                            <a href="https://zealous-cliff-01e651f0f.7.azurestaticapps.net/dashboard.html" target="_blank" rel="noopener noreferrer" class="subpage-link">
+                                <i class="fas fa-chart-bar"></i>
+                                <span class="subpage-name">Dashboard</span>
+                                <span class="subpage-desc">View usage statistics, daily request trends, and token consumption charts</span>
+                            </a>
+                            <a href="https://zealous-cliff-01e651f0f.7.azurestaticapps.net/models.html" target="_blank" rel="noopener noreferrer" class="subpage-link">
+                                <i class="fas fa-robot"></i>
+                                <span class="subpage-name">Models</span>
+                                <span class="subpage-desc">Compare AI model tiers, quota limits, and real-time availability status</span>
+                            </a>
+                            <a href="https://zealous-cliff-01e651f0f.7.azurestaticapps.net/about.html" target="_blank" rel="noopener noreferrer" class="subpage-link">
+                                <i class="fas fa-info-circle"></i>
+                                <span class="subpage-name">About</span>
+                                <span class="subpage-desc">Architecture overview, tech stack, RAG pipeline explanation, and deployment details</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">LlamaIndex</span>
+                        <span class="tech-tag">ChromaDB</span>
+                        <span class="tech-tag">Google Cloud Run</span>
+                        <span class="tech-tag">Azure Static Web Apps</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Priyanka Chaudhari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
