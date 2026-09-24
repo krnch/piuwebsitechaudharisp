@@ -1,0 +1,29 @@
+{
+  "routes": [
+    { "route": "/.auth/login/aad", "statusCode": 404 },
+    { "route": "/.auth/login/github", "statusCode": 404 },
+    { "route": "/admin*", "statusCode": 404 },
+    { "route": "/api*", "statusCode": 404 },
+    { "route": "/.auth*", "statusCode": 404 },
+    { "route": "/_data/*", "headers": { "Content-Type": "text/yaml", "Cache-Control": "no-cache" } },
+    { "route": "/projects/*.docx", "headers": { "Content-Disposition": "inline", "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET" } },
+    { "route": "/projects/complianceai/app", "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/", "statusCode": 302 },
+    { "route": "/projects/complianceai/app/dashboard", "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/dashboard.html", "statusCode": 302 },
+    { "route": "/projects/complianceai/app/models", "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/models.html", "statusCode": 302 },
+    { "route": "/projects/complianceai/app/about", "redirect": "https://zealous-cliff-01e651f0f.7.azurestaticapps.net/about.html", "statusCode": 302 }
+  ],
+  "responseOverrides": {
+    "404": { "rewrite": "/404.html", "statusCode": 404 }
+  },
+  "mimeTypes": {
+    ".yml": "text/yaml",
+    ".yaml": "text/yaml",
+    ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    ".pdf": "application/pdf"
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  }
+}
