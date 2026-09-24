@@ -23,6 +23,8 @@ Thumbs.db
 # Build outputs
 dist/
 build/
+.public-site/
+.copilot-azure/
 
 # Temporary files
 *.tmp
